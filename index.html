@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+   
+  </head>
+  <body>
+   <div style="font-family:arial black ;font-size:2em; ">
+    <a href="/me.html" >1</a><br>
+    <a href="/me.html" >2</a><br>
+    <a href="/me.html" >3</a>
+  </div>
+  </body>
+  <script>
+  // Дана строка "Bob going to school. Bob likes math". Замените все ключевые слова Bob на Alice.
+
+let bob = "Bob going to school. Bob likes math";
+let alice = bob.replace(/Bob/gi, "Alice");
+console.log(alice);
+
+
+// Создайте шаблон регулярного выражения, который определяет является ли строка email - ом(проверьте все ключевые символы)
+
+function mail(email) 
+    {
+        let rgx = new RegExp (/[a-z\d]+@[a-z\d]+\.[a-z]/) 
+        let much = email.match(rgx)
+        if(much){
+            return 'right email :-)'
+        }
+        if(!much){
+           return 'Wrong email !!!'
+        }
+    }
+console.log(mail('istaravshan@ilmhona.org'));
+
+
+//3. Создайте шаблон регулярного выражения, который определяет надежность пароля. Длинна должна быть больше 6-ти символов Должны быть заглавные буквы, цифры и символы.
+
+function pass(password) {
+   const much = password.match(rgx);
+   const much = password.match(rgx);
+\D+ ?=^.{6,}$)(?=.*))/) 
+   if(much){(\D+ ?=^.{6,}$)(?=.*))/) 
+   if(much){
+   return 'right password :-)'
+    }
+    if(!much){
+        return 'wrong password !!!'
+    }
+}
+console.log(pass("DUSHANBE@.6"));
+  
+</script>
+<html>
+</html>
